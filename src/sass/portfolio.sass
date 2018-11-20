@@ -1,0 +1,62 @@
+.portfolio
+ padding-bottom: 50px
+
+.section-title-dark
+ position: relative
+ h2
+	 font-size: 30px
+	 font-weight: 300
+	 text-transform: uppercase
+	 color: #515f67
+	 margin-top: 10px
+	 margin-bottom: 50px
+	 &::after
+	  content: ""
+	  position: absolute
+	  height: 2px
+	  width: 45px
+	  bottom: 45px
+	  left: 15px
+	  background-color: #515f67 
+	&::after
+	 color: #515f67
+
+.filter
+ display: flex
+	justify-content: space-between
+	vertical-align: middle
+	list-style: none
+	&-row
+	 display: flex
+	 justify-content: space-between
+	 margin-top: 75px
+	 margin-bottom: 50px
+	&-item
+	 margin-right: 12px
+	&-link
+		opacity: 0.8
+		color: #515f67
+		font-size: 14px
+		font-weight: bold
+		line-height: 14px
+		text-transform: uppercase
+		padding: 6px 18px
+	&-link:hover	
+		opacity: 1
+
+.active
+	color: #4bcaff
+	border: 1px solid #4bcaff	
+	&:hover
+	 border: 1px solid #4bcaff			
+
+.portfolio
+ &-item
+	 margin-bottom: 30px
+	 padding: 0
+	 position: relative
+	&-image
+	 width: 260px
+	 height: 260px
+	  
+
