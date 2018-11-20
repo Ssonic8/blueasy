@@ -1,12 +1,26 @@
 .main-header 
  margin: 0
+ position: relative
+ background: #515f68 url("../img/header/header-bg.jpg") center no-repeat
+ z-index: 2
+ &::before
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 150px
+  width: 100%
+  height: 620px
+  background-color: rgba(0, 0, 0, 0.4)
+  z-index: 0
 
 .main-navigation
  background-color: #39444b
  width: 100%
 	height: 150px
-	opacity: 0.8
+	opacity: 0.9
 	margin-bottom: 0
+	
 
 
 .navigation-container
@@ -29,6 +43,7 @@
 	list-style: none
 	&-item
 	 margin-right: 12px
+
 	&-link
 		opacity: 0.8
 		color: #ffffff
@@ -38,7 +53,7 @@
 		text-transform: uppercase
 		padding: 6px 18px
 	&-link:hover	
-		color: #fff
+		opacity: 1
 
 .active
 	color: #4bcaff
@@ -47,10 +62,11 @@
 	 border: 1px solid #4bcaff	
 
 .title
-	background-color: #515f68
-	background-image: url("../img/header/header-bg.jpg")
-	height: 650px
+	height: 800px
 	margin-top: -180px
+	display: flex
+	justify-content: center
+	align-items: center
  h1
 		text-align: center
 	 vertical-align: middle
@@ -59,7 +75,7 @@
 	 color: #fff
 	 opacity: 0.8
 	 font-weight: 300
-	 padding-top: 350px
+
 	 text-transform: uppercase
 
 .highlight 

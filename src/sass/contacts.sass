@@ -1,9 +1,23 @@
 .title-row
- margin-bottom: 0
+ margin: 0
+ height: 120px
 
 .contacts
- background-color: #515f67
- /*background-image: url("../img/contact/contact-bg.jpg")*/
+ width: 100%
+ height: 814px
+ position: relative
+ background: #515f67 url("../img/contact/contact-bg.jpg") center no-repeat
+ z-index: 0
+ &::before
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.4)
+  z-index: -2
  &-title
   position: relative
  h2
@@ -24,6 +38,8 @@
 	 & textarea
 	  width: 100%
 	  min-height: 220px
+	  color: #fff
+    font-size: 24px
 	  border: 1px solid #ffffff
 	  background-color: transparent
 	 & label
@@ -31,15 +47,19 @@
 	  margin-top: 35px
 	  margin-bottom: 6px
 	  font-size: 14px
-   font-weight: 600
-   line-height: 24px
-   text-transform: uppercase  
+	  font-weight: 600
+	  line-height: 24px
+	  text-transform: uppercase  
+	  &:first-of-type
+	   margin-top: 0
 
  &-input
   width: 470px
   height: 60px
   border: 1px solid #ffffff
   background-color: transparent
+  color: #fff
+  font-size: 24px
  &-text
   margin-top: 15px
   margin-bottom: 15px
